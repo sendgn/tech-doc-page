@@ -15,67 +15,436 @@
           <a class="nav-link" href="#Introduction">Введение</a>
         </li>
         <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
+          <a class="nav-link" href="#Hello_world">Пример "hello world"</a>
         </li>
         <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
+          <a class="nav-link" href="#Variables">Переменные</a>
         </li>
         <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
+          <a class="nav-link" href="#Comments">Комментарии</a>
         </li>
         <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
+          <a class="nav-link" href="#Conditions">Условия</a>
         </li>
         <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
+          <a class="nav-link" href="#Functions">Функции</a>
         </li>
         <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
+          <a class="nav-link" href="#Events">События</a>
         </li>
         <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#Introduction">Введение</a>
+          <a class="nav-link" href="#Reference">Ссылки</a>
         </li>
       </ul>
     </nav>
     <main id="main-doc">
       <section class="main-section" id="Introduction">
         <header>Введение</header>
-        <article></article>
+        <article>
+          <p>
+            JavaScript – это язык программирования, который добавляет
+            интерактивность на ваш веб-сайт (например: игры, отклик при нажатии
+            кнопок или при вводе данных в формы, динамические стили, анимация).
+            Эта статья поможет вам начать работать с этим захватывающим языком и
+            даст вам представление о том, на что он способен.
+          </p>
+          <p>
+            JavaScript("JS" для краткости) — это полноценный динамический язык
+            программирования, который применяется к HTML документу, и может
+            обеспечить динамическую интерактивность на веб-сайтах. Его
+            разработал Brendan Eich, сооснователь проекта Mozilla, Mozilla
+            Foundation и Mozilla Corporation.
+          </p>
+          <p>
+            JavaScript невероятно универсален и дружелюбен к новичкам. Обладая
+            большим опытом, вы сможете создавать игры, анимированную 2D и 3D
+            графику, полномасштабные приложения с базами данных и многое другое!
+          </p>
+          <p>
+            JavaScript сам по себе довольно компактный, но очень гибкий.
+            Разработчиками написано большое количество инструментов поверх
+            основного языка JavaScript, которые разблокируют огромное количество
+            дополнительных функций с очень небольшим усилием. К ним относятся:
+          </p>
+          <ul>
+            <li>
+              Программные интерфейсы приложения (API), встроенные в браузеры,
+              обеспечивающие различные функциональные возможности, такие как
+              динамическое создание HTML и установку CSS стилей, захват и
+              манипуляция видеопотоком, работа с веб-камерой пользователя или
+              генерация 3D графики и аудио сэмплов.
+            </li>
+            <li>
+              Сторонние API позволяют разработчикам внедрять функциональность в
+              свои сайты от других разработчиков, таких как Twitter или
+              Facebook.
+            </li>
+            <li>
+              Также вы можете применить к вашему HTML сторонние фреймворки и
+              библиотеки, что позволит вам ускорить создание сайтов и
+              приложений.
+            </li>
+          </ul>
+        </article>
       </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
+      <section class="main-section" id="Hello_world">
+        <header>Пример "hello world"</header>
+        <article>
+          <p>
+            Предыдущий раздел звучит очень многообещающе, и это на самом деле
+            так — JavaScript является одной из самых перспективных
+            веб-технологий, и когда вы освоитесь и начнёте использовать его,
+            ваши веб-сайты перейдут в новое измерение мощи и креативности.
+          </p>
+          <p>
+            Тем не менее, с JavaScript немного более сложно освоиться, чем с
+            HTML и CSS. Вам придется начать с малого, продолжая изучение
+            небольшими шагами. Для начала мы покажем вам, как добавить некоторые
+            основы JavaScript на вашу страницу, чтобы создать "hello world!"
+            пример (<a href="https://ru.wikipedia.org/wiki/Hello,_world!"
+              >стандарт в начальных примерах программирования</a
+            >).
+          </p>
+          <div class="warning notecard">
+            <p>
+              <strong>Важно</strong>:
+              <a
+                href="https://github.com/mdn/beginner-html-site-styled/archive/gh-pages.zip"
+                rel="noopener"
+                >Скачайте этот пример кода</a
+              >
+              и используйте его в качестве стартовой точки.
+            </p>
+          </div>
+          <ol>
+            <li>
+              Для начала перейдите на ваш тестовый сайт и создайте папку с
+              именем 'scripts' (без кавычек). Затем, в новой папке скриптов,
+              которую вы только что создали, создайте новый файл с именем
+              <code>main.js</code>. Сохраните его в вашей папке
+              <code>scripts</code>.
+            </li>
+            <li>
+              Далее перейдите в ваш <code>index.html</code> файл и введите
+              следующий элемент на новой строке прямо перед закрывающим тегом
+              <code>&lt;/body&gt;</code>:
+              <pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>scripts/main.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code>
+              </pre>
+            </li>
+            <li>
+              В основном этот код выполняет ту же работу, что и элемент
+              <code>&lt;link&gt;</code>
+              для CSS — добавляет JavaScript на страницу, позволяя ему
+              взаимодействовать с HTML (и CSS, и чем-нибудь ещё на странице).
+            </li>
+            <li>
+              Теперь добавьте следующий код в файл <code>main.js</code>:
+              <pre><code><span class="token keyword">var</span> myHeading <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+myHeading<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">'Hello world!'</span><span class="token punctuation">;</span></code>
+              </pre>
+            </li>
+            <li>
+              Теперь убедитесь, что HTML и JavaScript файлы сохранены, и
+              загрузите <code>index.html</code> в браузере.
+            </li>
+          </ol>
+          <div class="note notecard">
+            <p>
+              <strong>Примечание</strong>: Причиной, по которой мы поставили
+              элемент
+              <code>&lt;script&gt;</code>
+              в нижней части HTML файла, является то, что HTML-элементы
+              загружаются браузером в том порядке, в котором они расположены в
+              файле. Поэтому, если JavaScript загружается первым и ему нужно
+              взаимодействовать с HTML ниже его, он не сможет работать, так как
+              JavaScript будет загружен раньше, чем HTML, с которым нужно
+              работать. Поэтому, располагать JavaScript в нижней части HTML
+              страницы считается лучшей стратегией.
+            </p>
+          </div>
+        </article>
       </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
+      <section class="main-section" id="Variables">
+        <header>Переменные</header>
+        <article>
+          <p>
+            Переменные — это контейнеры, внутри которых вы можете хранить
+            значения. Вы начинаете с того, что объявляете переменную с помощью
+            ключевого слова <code>var</code> (не рекомендуется, продолжайте
+            читать, чтобы получить объяснения) или <code>let</code>, за которым
+            следует любое имя, которым вы захотите её назвать:
+          </p>
+          <pre><code><span class="token keyword">let</span> myVariable<span class="token punctuation">;</span></code>
+          </pre>
+          <div class="note notecard">
+            <p>
+              <strong>Примечание</strong>: Точка с запятой в конце строки
+              указывает, где заканчивается оператор; это абсолютно необходимо,
+              когда вам нужно разделить оператора на одной строке. Однако
+              некоторые люди считают, что хорошая практика - указывать их в
+              конце каждого оператора. Существуют и другие правила, когда вы
+              должны и не должны их использовать - смотрите более подробно в
+              статье
+              <a
+                href="http://news.codecademy.com/your-guide-to-semicolons-in-javascript/"
+                rel="noopener"
+                >ваше руководство по точкам с запятой в JavaScript</a
+              >.
+            </p>
+          </div>
+          <div class="note notecard">
+            <p>
+              <strong>Примечание</strong>: Вы можете назвать переменную
+              практически как угодно, но есть некоторые ограничения для её имени
+              (смотрите в
+              <a
+                href="http://www.codelifter.com/main/tips/tip_020.shtml"
+                rel="noopener"
+                >правилах именования переменных</a
+              >).
+            </p>
+          </div>
+          <div class="note notecard">
+            <p>
+              <strong>Примечание</strong>: JavaScript чувствителен к регистру —
+              <code>myVariable</code> отличается от переменной
+              <code>myvariable</code>. Если у вас возникают проблемы в вашем
+              коде, проверьте регистр!
+            </p>
+          </div>
+          <div class="note notecard">
+            <p>
+              <strong>Примечание</strong>: Для получения более подробной
+              информации о разнице между var и let, смотрите:
+              <a
+                href="https://wiki.developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let"
+                rel="noopener"
+                >Разница между var и let</a
+              >.
+            </p>
+          </div>
+          <p>После объявления переменной вы можете присвоить ей значение:</p>
+          <pre><code>myVariable <span class="token operator">=</span> <span class="token string">'Bob'</span><span class="token punctuation">;</span></code></pre>
+          <p>
+            Вы можете сделать обе эти операции на одной и той же строке, если вы
+            захотите:
+          </p>
+          <pre><code><span class="token keyword">var</span> myVariable <span class="token operator">=</span> <span class="token string">'Bob'</span><span class="token punctuation">;</span></code></pre>
+          <p>Вы можете получить значение, просто вызвав переменную по имени:</p>
+          <pre><code>myVariable<span class="token punctuation">;</span></code></pre>
+          <p>
+            После установки значения переменной вы можете изменить его позже:
+          </p>
+          <pre><code><span class="token keyword">var</span> myVariable <span class="token operator">=</span> <span class="token string">'Bob'</span><span class="token punctuation">;</span>
+myVariable <span class="token operator">=</span> <span class="token string">'Steve'</span><span class="token punctuation">;</span></code></pre>
+          <p>Обратите внимание, что переменные имеют разные типы данных:</p>
+          <table class="table">
+            <thead>
+              <th scope="col">Переменная</th>
+              <th scope="col">Пояснение</th>
+              <th scope="col">Пример</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">String</th>
+                <td>
+                  Последовательность текста, называемая строкой. Чтобы указать,
+                  что это значение является строкой, вы должны заключить его в
+                  кавычки.
+                </td>
+                <td><code>var myVariable = 'Bob';</code></td>
+              </tr>
+              <tr>
+                <th scope="row">Number</th>
+                <td>Числа. Числа не имеют кавычек вокруг них.</td>
+                <td><code>var myVariable = 10;</code></td>
+              </tr>
+              <tr>
+                <th scope="row">Boolean</th>
+                <td>
+                  Значение True(Правда)/False(Ложь). Слова <code>true</code> и
+                  <code>false</code> специальные ключевые слова в JS, и не
+                  нуждаются в кавычках.
+                </td>
+                <td><code>var myVariable = true;</code></td>
+              </tr>
+              <tr>
+                <th scope="row">Array</th>
+                <td>
+                  Массив, который позволяет хранить несколько значений в одной
+                  ссылке.
+                </td>
+                <td>
+                  <code>var myVariable = [1,'Bob','Steve',10];</code><br />
+                  Обратиться к каждому элементу массива можно так:<br />
+                  <code>myVariable[0]</code>, <code>myVariable[1]</code>, и т.д.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Object</th>
+                <td>
+                  В принципе, что угодно. Все в JavaScript является объектом, и
+                  может храниться в переменной. Имейте это в виду, пока вы
+                  учитесь.
+                </td>
+                <td>
+                  <code>var myVariable = document.querySelector('h1');</code
+                  ><br />
+                  Все это из вышеприведённых примеров.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Так для чего нам нужны переменные? Что ж, переменные должны были
+            сделать что-нибудь интересное в программировании. Если значения не
+            могли бы изменяться, то вы не могли бы ничего сделать динамическим,
+            например, персонализировать приветственное сообщение или сменить
+            изображение, отображаемое в галерее изображений.
+          </p>
+        </article>
       </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
+      <section class="main-section" id="Comments">
+        <header>Комментарии</header>
+        <article>
+          <p>
+            Комментарии - это, по сути, короткие фрагменты текста, которые могут
+            быть добавлены в код, и которые игнорируются браузером. Вы можете
+            поместить комментарии в JavaScript код, так же как вы делали это в
+            CSS:
+          </p>
+          <pre
+            class="brush: js notranslate"
+          ><code><span class="token comment">/*
+Всё, что находится тут - комментарий.
+*/</span></code></pre>
+          <p>
+            Если ваш комментарий не содержит переноса строк, то зачастую легче
+            поставить две косые черты, как тут:
+          </p>
+          <pre
+            class="brush: js notranslate"
+            style="font-size: 14px"
+          ><code><span class="token comment">// Это комментарий</span>
+</code></pre>
+        </article>
       </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
+      <section class="main-section" id="Conditions">
+        <header>Условия</header>
+        <article>
+          <p>
+            Условия — это кодовые структуры, которые позволяют вам проверять,
+            истинно или ложно выражение, а затем выполнить другой код в
+            зависимости от результата. Самая распространенная форма условия
+            называется, <code>if ... else</code>. Например:
+          </p>
+          <pre
+            class="brush: js notranslate"
+          ><code><span class="token keyword">var</span> iceCream <span class="token operator">=</span> <span class="token string">'chocolate'</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>iceCream <span class="token operator">===</span> <span class="token string">'chocolate'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Yay, I love chocolate ice cream!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Awwww, but chocolate is my favorite...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+          <p>
+            Выражение внутри <code>if ( ... )</code> — это проверка, которая
+            использует тождественный оператор (как описано выше), чтобы сравнить
+            переменную <code>iceCream</code> со строкой <code>chocolate</code> и
+            увидеть равны ли они. Если это сравнение возвращает
+            <code>true</code>, выполнится первый блок кода. Если нет, этот код
+            пропустится и выполнится второй блок кода, после инструкции
+            <code>else</code>.
+          </p>
+        </article>
       </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
+      <section class="main-section" id="Functions">
+        <header>Функции</header>
+        <article>
+          <p>
+            Функции - способ упаковки функциональности, которую вы хотите
+            использовать повторно. Всякий раз, когда вам нужна определенная
+            процедура, вы можете просто вызвать функцию по её имени, а не
+            переписывать весь код каждый раз. Вы уже видели некоторые функции,
+            описанные выше, например:
+          </p>
+          <ol>
+            <li>
+              <pre><code><span class="token keyword">var</span> myVariable <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            </li>
+            <li>
+              <pre><code><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'hello!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            </li>
+          </ol>
+          <p>
+            Эти функции, <code>document.querySelector</code> и
+            <code>alert</code>, встроены в браузер для того, чтобы вы
+            использовали их всякий раз, когда вам это необходимо.
+          </p>
+          <p>
+            Если вы видите что-то, что выглядит как имя переменной, но имеет
+            после него скобки — <code>()</code>, скорее всего, это функция.
+            Функции часто принимают аргументы — биты данных, которые им
+            необходимы для выполнения своей работы. Они находятся в скобках, и
+            разделяются запятыми, если присутствует более одного аргумента.
+          </p>
+          <p>
+            Например, функция <code>alert()</code> вызывает всплывающий блок,
+            появляющийся в окне браузера, но мы должны дать ему строку в
+            качестве аргумента, чтобы сказать функции, что писать во всплывающем
+            блоке.
+          </p>
+          <p>
+            Хорошая новость заключается в том, что вы можете определить свои
+            собственные функции — в следующем примере мы напишем простую
+            функцию, которая принимает два числа в качестве аргументов и
+            умножает их:
+          </p>
+          <pre
+            class="brush: js notranslate"
+          ><code><span class="token keyword">function</span> <span class="token function">multiply</span><span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span>num2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> result <span class="token operator">=</span> num1 <span class="token operator">*</span> num2<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+          <p>Попробуйте запустить вышеупомянутую функцию в консоли, затем попробуйте изменить аргументы, например:</p>
+          <pre><code><span class="token function">multiply</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">multiply</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre>
+          <div class="note notecard">
+            <p>
+              <strong>Примечание</strong>
+              : Инструкция <code>return</code> сообщает браузеру, что нужно
+              вернуть переменную <code>result</code> из функции, которую можно
+              будет использовать. Это необходимо потому, что переменные,
+              определенные внутри функций, доступны только внутри этих функций.
+              Это называется областью видимости переменной.
+            </p>
+          </div>
+        </article>
       </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
+      <section class="main-section" id="Events">
+        <header>События</header>
+        <article>
+          <p>
+            Для создания действительной интерактивности на веб-сайте вам необходимы события. События — это структура, которая слушает то, что происходит в браузере, а затем позволяет вам запускать код в ответ на это. Наиболее очевидным является событие клика, которое вызывается браузером, когда мы щёлкаем по чему-то мышью. Для демонстрации этого события введите следующую команду в вашу консоль, а затем щёлкните по текущей веб-странице:
+          </p>
+          <pre class="brush: js notranslate"><code>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Ouch! Stop poking me!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+          <p>
+            Существуют множество способов прикрепить событие к элементу. Здесь мы выбираем <code>&lt;html&gt;</code> элемент и устанавливаем ему обработчик свойства <code>onclick</code> анонимной функцией (т.е. безымянной) которая содержит код, который мы хотим запустить для события клика.
+          </p>
+          <p>Обратите внимание, что</p>
+          <pre><code>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          <p>эквивалентно</p>
+          <pre class="brush: js notranslate"><code><span class="token keyword">var</span> myHTML <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+myHTML<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          <p>Просто так короче.</p>
+        </article>
       </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
-      </section>
-      <section class="main-section" id="">
-        <header></header>
-        <article></article>
+      <section class="main-section" id="Reference">
+        <header>Ссылки</header>
+        <article>
+          <p>Вся документация на этой странице взята c <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN</a>.</p>
+        </article>
       </section>
     </main>
   </body>
