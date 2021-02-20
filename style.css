@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --color-dark-1: #243b53;
+  --color-dark-2: #363f4e;
+  --color-dark-3: #697486;
+  --color-light-1: #fff;
+  --color-light-2: #f9fbfe;
+  --color-light-3: #ecf0f7;
+  --color-code: #1979ca;
+  --color-note-1: #2a86a3;
+  --color-note-2: #e6f8fd;
+  --color-warning-1: #e1c542;
+  --color-warning-2: #fef1b6;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--color-dark-3);
+  background-color: var(--color-light-1);
+  padding: 1.2rem 2.4rem 2.4rem 2.4rem;
+}
+
+header {
+  color: var(--color-dark-2);
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ol li,
+ul li {
+  margin-bottom: 1.5rem;
+}
+
+article > p {
+  margin-bottom: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: var(--color-note-1);
+}
+
+code,
+pre {
+  background-color: var(--color-light-3);
+}
+
+pre {
+  overflow: auto;
+  padding: 2.4rem;
+  border-left: 5px solid var(--color-code);
+  margin: 2.4rem 0;
+}
+
+code {
+  font-family: Consolas, Courier, monospace;
+  padding: 0 3px;
+}
+
+.main-section {
+  margin-top: 1rem;
+}
+
+.main-section ul {
+  list-style: square;
+}
+
+.main-section ol,
+.main-section ul {
+  padding-left: 4rem;
+  max-width: 70rem;
+}
+
+.notecard {
+  border-left: 5px solid var(--color-note-1);
+  padding: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.notecard.note {
+  background-color: var(--color-note-2);
+}
+
+.notecard.warning {
+  border-left: 5px solid var(--color-warning-1);
+  background-color: var(--color-warning-2);
+}
+
+.token.keyword {
+  color: #00448b;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #b53248;
+}
+
+.token.tag {
+  color: #906;
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.token.attr-name,
+.token.string {
+  color: #266738;
+}
+
+.table {
+  width: 100%;
+  margin: 4.5rem 0;
+  font-size: 1.7rem;
+}
+
+.table th {
+  color: var(--color-dark-1);
+  text-align: left;
+}
+
+.table td,
+.table th {
+  background-color: var(--color-light-3);
+  padding: 1.4rem;
+}
+
+.table thead th {
+  background-color: var(--color-note-2);
+}
